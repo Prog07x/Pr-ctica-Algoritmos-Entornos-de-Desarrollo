@@ -21,5 +21,22 @@ public abstract class algoritmos {
 		
 		return b;
 	}
+	
+	
+	public int factorial(int numero) {
+		if(numero<0) throw new IllegalArgumentException();
+		int resultado = 1;
+		for (int i = 2; i<=numero ; i++) {
+			resultado = resultado*i;
+		}
+		
+		return resultado;
+	}
+	
+	
+	
+	
+	
+	
 
 }
