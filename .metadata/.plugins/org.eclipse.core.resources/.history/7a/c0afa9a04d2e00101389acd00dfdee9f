@@ -1,0 +1,12 @@
+package com.entornos.SalvadorGarciaMoreno.algoritmos;
+
+public abstract class algoritmos {
+	
+	public int fibonacci(int numero) {
+		
+		
+		
+		return 0;
+	}
+
+}

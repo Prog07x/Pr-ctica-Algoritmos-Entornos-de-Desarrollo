@@ -1,0 +1,14 @@
+package com.entornos.SalvadorGarciaMoreno.algoritmos;
+
+public abstract class algoritmos {
+	
+	public int fibonacci(int numero) {
+		if(numero<0) {
+			throw new IllegalArgumentException;
+		}
+		
+		
+		return 0;
+	}
+
+}
