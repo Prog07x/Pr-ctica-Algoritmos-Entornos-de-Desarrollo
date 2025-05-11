@@ -2,16 +2,20 @@ package com.entornos.SalvadorGarciaMoreno.algoritmos;
 
 public abstract class algoritmos {
 	
+	/****
+	 * Calculo sucesion fibonachi en el n puesto
+	 * @param numero
+	 * @return int
+	 */
 	public int fibonacci(int numero) {
-		if(numero<0) {
-			throw new IllegalArgumentException();
-		}
-		 // f(0) == 0 y f(1) == 1;
+		if(numero<0) throw new IllegalArgumentException();
 		
 		int a = 0;
 		int b = 1;
+		
 		if(numero == 0) return 0;
 		if(numero == 1) return 1; 
+		
 		int siguiente = 0;
 		for(int i = 2; i <= numero; i++) {
 			siguiente = a+b;
@@ -22,7 +26,11 @@ public abstract class algoritmos {
 		return b;
 	}
 	
-	
+	/****
+	 * Calculo del factorial de n
+	 * @param numero
+	 * @return int 
+	 */
 	public int factorial(int numero) {
 		if(numero<0) throw new IllegalArgumentException();
 		int resultado = 1;
@@ -31,6 +39,19 @@ public abstract class algoritmos {
 		}
 		
 		return resultado;
+	}
+	
+	/****
+	 * Comprueba si n es primo o no.
+	 * @param numero
+	 * @return boolean
+	 */
+	public boolean primo(int numero) {
+		if(numero<2) throw new IllegalArgumentException();
+		for(int i = 2; i<=numero/2+1; i++) {
+			if(numero%i == 0) return false;
+		}
+		return true;
 	}
 	
 	
