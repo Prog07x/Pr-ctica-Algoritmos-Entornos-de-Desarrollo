@@ -48,6 +48,7 @@ public abstract class algoritmos {
 	 */
 	public static boolean primo(int numero) {
 		if(numero<2) throw new IllegalArgumentException();
+		if(numero == 2) return true;
 		for(int i = 2; i<=numero/2+1; i++) {
 			if(numero%i == 0) return false;
 		}
