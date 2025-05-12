@@ -7,7 +7,7 @@ public abstract class algoritmos {
 	 * @param numero
 	 * @return int
 	 */
-	public int fibonacci(int numero) {
+	public static int fibonacci(int numero) {
 		if(numero<0) throw new IllegalArgumentException();
 		
 		int a = 0;
@@ -31,7 +31,7 @@ public abstract class algoritmos {
 	 * @param numero
 	 * @return int 
 	 */
-	public int factorial(int numero) {
+	public static int factorial(int numero) {
 		if(numero<0) throw new IllegalArgumentException();
 		int resultado = 1;
 		for (int i = 2; i<=numero ; i++) {
@@ -46,7 +46,7 @@ public abstract class algoritmos {
 	 * @param numero
 	 * @return boolean
 	 */
-	public boolean primo(int numero) {
+	public static boolean primo(int numero) {
 		if(numero<2) throw new IllegalArgumentException();
 		for(int i = 2; i<=numero/2+1; i++) {
 			if(numero%i == 0) return false;
